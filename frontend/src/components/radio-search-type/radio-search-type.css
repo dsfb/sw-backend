@@ -1,0 +1,66 @@
+/*
+    Style the radio like the zeplin model.
+    We need do create some accessibility (keyboard etc) for this but, due to the time frame, it was impossible.
+ */
+
+
+[type="radio"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+[type="radio"] + label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    position: relative;
+    padding-left: 1em;
+    cursor: pointer;
+    display: inline-block;
+    color: var(--black);
+}
+
+[type="radio"] + label::before {
+    content: "";
+    position: absolute;
+    left: -0.5em;
+    width: 1em;
+    height: 1em;
+    background-color: var(--white);
+    border-radius: 100%;
+    border: 0.1em solid ;
+}
+
+[type="radio"]:checked + label::before {
+    content: "";
+    position: absolute;
+    left: -0.5em;
+    width: 0.35em;
+    height: 0.35em;
+    background-color: var(--white);
+    border-radius: 100%;
+    border: 0.45em solid var(--blue);
+    transform: scale(1);
+    transition: ease-in-out ;
+    transition-duration: 180ms;
+}
+
+span:nth-of-type(2) {
+    padding-left: 3em;
+}
+
+/*
+.label {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 30px 20px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+*/

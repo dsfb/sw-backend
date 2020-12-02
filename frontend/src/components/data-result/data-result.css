@@ -1,0 +1,9 @@
+.message {
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: var(--gainsboro);
+    display: grid;
+    place-items: center;
+    height: 100%;
+}

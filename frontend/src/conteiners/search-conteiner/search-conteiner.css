@@ -1,0 +1,21 @@
+.searchConteiner {
+    width: 100%;/*410px;*/
+    height: 25%;/*230px;*/
+    padding: 3em;
+}
+
+div {
+    width: 100%;
+}
+
+.text {
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #383838;
+}
+

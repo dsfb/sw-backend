@@ -1,0 +1,13 @@
+button {
+    width: 100%; /*350px;*/
+    height: 2.8em;/*34px;*/
+    border-radius: 20px; /*20px;*/
+    border: solid 1px var(--green);
+    background-color: var(--green);
+}
+
+button:disabled {
+    border: solid 1px var(--gray);
+    background-color: var(--gray);
+}
+
